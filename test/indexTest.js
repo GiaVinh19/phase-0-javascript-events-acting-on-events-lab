@@ -36,7 +36,7 @@ describe('moveDodgerRight()', () => {
     let newPosition = dodger.style.left
     newPosition = parseInt(newPosition)
     
-    if (left < 360){
+    if (left > 0){
       expect(newPosition).to.be.above(left)
     } else{
       expect(newPosition).to.equal(left)
